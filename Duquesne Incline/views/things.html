@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <script defer src="../static/script.js"></script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<body>
+
+    <header>
+        <nav>
+                <a href = "../index.html" class="link">
+                    <img src="../static/images/logo.png" alt="home" width="80" height="55">
+                </a>
+            <div class="right">
+                <a href = "about.html" class="link">ABOUT</a>
+                <a href = "fares.html" class="link">FARES</a>
+                <a href = "things.html" class="link">THINGS TO DO</a>
+                <a href = "gallery.html" class="link">GALLERY</a>
+                <a href = "faq.html" class="link">FAQ'S</a> 
+            </div>
+        </nav>
+    </header>
+    <div class ="divMain">
+        <div class="title">
+            <h2>THINGS TO DO</h2>
+        </div>
+    <div class="thingsSub">
+            <h3 class="thingsTitle">CITY TOURS THAT FEATURE THE DUQUESNE INCLINE</h3>
+            <div class="things">
+                <div class="thingsBoxTop">
+                    <div class="thingsText">
+                        <h4 class="thingsSubTitle">MOLLY'S TROLLEYS</h4>
+                        <p class="thingsP">Website: <a href="www.mollystrolleyspgh.com" class="mailHome">www.mollystrolleyspgh.com</a>
+                        <br> Number: 412-281-2055 <br> Photos courtesy of Molly's Trolleys website</p>
+                    </div>
+                    <div class="thingsImage">
+                        <!-- credit to w3.js slideshow code 
+                         https://www.w3schools.com/w3js/tryit.asp?filename=tryw3js_slideshow_next-->
+                        <img class="slideImage1" src="../static/images/molly1.jpg" width="50%" height="auto">
+                        <img class="slideImage1" src="../static/images/molly2.jpg" width="50%" height="auto">
+                        <img class="slideImage1" src="../static/images/molly3.jpg" width="50%" height="auto">
+                        <p>
+                            <button class="slideButton" onclick="molly.previous()">Previous</button>
+                            <button class="slideButton" onclick="molly.next()">Next</button>
+                        </p>
+                    </div>
+                    <div class="thingsText">
+                        <h4 class="thingsSubTitle">RIVERS OF STEEL</h4>
+                        <p class="thingsP">Website: <a href="www.riversofsteel.com" class="mailHome">www.riversofsteel.com</a>
+                        <br> Number: 412-464-40020 or 412-381-8687 <br> Photos courtesy of Rivers of Steel website</p>
+                    </div>
+                    <div class="thingsImage">
+                        <img class="slideImage2" src="../static/images/river1.jpg" width="50%" height="auto">
+                        <img class="slideImage2" src="../static/images/river2.jpg" width="50%" height="auto">
+                        <img class="slideImage2" src="../static/images/river3.jpg" width="50%" height="auto">
+                        <p>
+                            <button class="slideButton" onclick="river.previous()">Previous</button>
+                            <button class="slideButton" onclick="river.next()">Next</button>
+                        </p>
+                    </div>
+                </div>
+                <script>
+                    //credit to w3.js slideshow 
+                    molly = w3.slideshow(".slideImage1", 0);
+                    river = w3.slideshow(".slideImage2", 0);
+                </script>
+            </div>   
+        </div>
+    </div>
+    
+    <div class="toTop">
+        <a href="#" class="topButton">Go to Top</a>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2025</p>
+        <p>1197 West Carson Street, Pittsburgh, PA 15219</p>
+        <p>Fax: 412.381.1943</p>
+        <p>Phone Number: 412.381.1665</p>
+        <a href="mailto:duq.incline@duquesneincline.org" class="mail">Email</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <script defer src="../static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+                <a href = "../index.html" class="link">
+                    <img src="../static/images/logo.png" alt="home" width="80" height="55">
+                </a>
+            <div class="right">
+                 <a href = "about.html" class="link">ABOUT</a>
+                <a href = "fares.html" class="link">FARES</a>
+                <a href = "things.html" class="link">THINGS TO DO</a>
+                <a href = "gallery.html" class="link">GALLERY</a>
+                <a href = "faq.html" class="link">FAQ'S</a> 
+            </div>
+        </nav>
+    </header>
+    <div class ="divMain">
+        <div class="title">
+            <h2>FARE PRICES</h2>
+        </div>
+        <div class="fares">
+            <div class="prices">
+                <h3 class="fareTitle">ADULTS</h3>
+                <div class="fareText">
+                    <p>$2.50 Each Way or $5.00 Round Trip</p>
+                </div>
+                <h3 class="fareTitle">CHILDREN</h3>
+                <div class="fareText">
+                    <p>Ages 6-11: $1.25 Each Way or $2.50 Round Trip</p>
+                    <p>Ages 5 and Under: Free</p>
+                </div>
+            </div>
+            <div class="prices">
+                <h3 class="fareTitle">STUDENTS</h3>
+                <div class="fareText">
+                    <p>University of Pittsburgh Students Free, with proper I.D.</p>
+                    <p>Carnegie Mellon Students Free, with proper I.D.</p>
+                    <p>UChatham University Students Free, with proper I.D.</p>
+                </div>
+            </div>
+            <div class="prices">
+                <h3 class="fareTitle">GROUP</h3>
+                <div class="fareText">
+                    <p>Group Rates are Valid for Any Group of Ten or More People</p>
+                    <p>Adults (Ages 12-64) $1.75 Each Way or $3.50 Round Trip</p>
+                    <p>Children (Ages 6-11) $1.00 Each Way or $1.75 Round Trip</p>
+                </div>
+            </div>
+        </div>
+        <div class="divSub">
+            <h3 class="additionalTitle">ADDITIONAL INFORMATION</h3>
+            <div class="fareSub">
+                <div class="fareTop">
+                    <p class="fareText">Cash fares as well as Port Authority bus passes and tickets are accepted as payment. <br>
+                        Seniors age 65 or older who present a blue or yellow PRT card or a Senior Connect Card ride free. <br>
+                        Wheelchair accessibility is via the Upper Station located 1220 Grandview Avenue Pittsburgh, Pa. 15211.
+                    </p>
+                </div>
+                <div class="fieldTrip" onClick="fieldTrip('fieldTrip.html')">
+                    <button id="fieldTrip">CLICK FOR FIELD TRIP INFORMATION</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toTop">
+        <a href="#" class="topButton">Go to Top</a>
+    </div>
+    <footer class="footer">
+        <p>Copyright &copy; 2025</p>
+        <p>1197 West Carson Street, Pittsburgh, PA 15219</p>
+        <p>Fax: 412.381.1943</p>
+        <p>Phone Number: 412.381.1665</p>
+        <a href="mailto:duq.incline@duquesneincline.org" class="mail">Email</a>
+    </footer>
+</body>
+</html>
