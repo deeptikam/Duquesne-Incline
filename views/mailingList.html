@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <script defer src="../static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+                <a href = "../index.html" class="link">
+                    <img src="../static/images/logo.png" alt="home" width="80" height="55">
+                </a>
+            <div class="right">
+                <a href = "about.html" class="link">ABOUT</a>
+                <a href = "fares.html" class="link">FARES</a>
+                <a href = "things.html" class="link">THINGS TO DO</a>
+                <a href = "gallery.html" class="link">GALLERY</a>
+                <a href = "faq.html" class="link">FAQ'S</a> 
+            </div>
+        </nav>
+    </header>
+    <div class ="divMain">
+        <div class="title">
+            <h2>JOIN OUR MAILING LIST!</h2>
+        </div>
+        <form id="mailingForm" onsubmit="return checkForm(event)">
+            <div class="mailingForm">
+                <div class="form">
+                    <label for="name" class="formTitle">NAME* :</label>
+                    <input type="text" class="formInput" id="name" name="name" required minlength="2" maxlength="50">
+                    <span class="error" id="nameError"></span>
+                  </div>
+                  
+                  <div class="form">
+                    <label for="email" class="formTitle">EMAIL* :</label>
+                    <input type="email" class="formInput" id="email" name="email" required>
+                    <span class="error" id="emailError"></span>
+                  </div>
+            </div>
+            <div class="mailingForm">
+                    <div class="form">
+                        <label for="phone" class="formTitle">MOBILE PHONE:</label>
+                        <input type="tel" class="formInput" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10">
+                        <span class="error" id="phoneError"></span>
+                      </div>
+                      <div class="form checkbox">
+                        <input type="checkbox" id="text" name="text" class="checkbox">
+                        <label for="text" class="formTitle">RECEIVE TEXTS</label>
+                        <span class="error" id="textError"></span>
+                      </div>
+            </div>
+            <div class="mailingForm">
+                <div class="form">
+                    <label for="zip" class="formTitle">ZIP CODE:</label>
+                    <input type="text" class="formInput" id="zip" name="zip" pattern="\d{5}" maxlength="5">
+                    <span class="error" id="zipError"></span>
+                  </div>    
+                  </div>
+            <p id="success"></p>
+            <div class="submit">
+                <input type="submit" id="submitButton" class="submitButton">
+            </div>
+        </form>
+    </div>
+    <div class="toTop">
+        <a href="#" class="topButton">Go to Top</a>
+    </div>
+    <footer class="footer">
+        <p>Copyright &copy; 2025</p>
+        <p>1197 West Carson Street, Pittsburgh, PA 15219</p>
+        <p>Fax: 412.381.1943</p>
+        <p>Phone Number: 412.381.1665</p>
+        <a href="mailto:duq.incline@duquesneincline.org" class="mail">Email</a>
+    </footer>
+</body>
+</html>

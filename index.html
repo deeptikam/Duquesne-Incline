@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <script defer src="./static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="index">
+    <header>
+        <nav class="homeNav">
+                <a href = "index.html" class="link">
+                    <img src="./static/images/logo.png" alt="home" width="80" height="55">
+                </a>
+            <div class="right">
+                <a href = "./views/about.html" class="link">ABOUT</a>
+                <a href = "./views/fares.html" class="link">FARES</a>
+                <a href = "./views/things.html" class="link">THINGS TO DO</a>
+                <a href = "./views/gallery.html" class="link">GALLERY</a>
+                <a href = "./views/faq.html" class="link">FAQ'S</a>
+            </div>
+        </nav>
+        <div class="mainIMG">
+            <div class="homeTop">
+                <div class="homeFact">
+                    <h3>OPEN 365</h3>
+                    <h3>DAYS A</h3>
+                    <h3>YEAR!</h3>
+                    <p class="mainFactText">Voted one of the top 10 sites in the world for viewing a Cityscape by USA Today.</p>
+                </div>
+                <div class="homeTitle">
+                    <h1 class="mainTitle">THE DUQUESNE</h1>
+                    <h1 class="mainTitle">INCLINE</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class ="homeMain">
+        <div class="homeBody">
+            <div class="welcome">
+                <h2 class="homeSubhead" id="greeting">greeting</h2>
+                <h2 class="homeSubhead2">WELCOME TO THE DUQUESNE INCLINE</h2>
+                <p class="homeText">
+                    Take a step back in time on a century-old cable car and see the best views 
+                    of downtown Pittsburgh while riding one of the few remaining inclines in the 
+                    country. Opened on May 20, 1877, the Duquesne Incline was rescued and restored 
+                    by a group of local residents in 1963 and still delights residents and visitors 
+                    with its original, elegant, wooden cable cars. Now you can visit the interior of 
+                    the incline and watch the machinery while it operates. The Duquesne Incline's 
+                    upper station houses a museum of Pittsburgh history, including photos and a 
+                    storehouse of information on inclines from around the world. Unusual Pittsburgh 
+                    souvenirs, maps and photos can be found at the gift shop.
+                </p>
+            </div>
+            <div class="restHome">
+                <h4 class="homeSubheadColor">WEATHER</h4>
+                <iframe src="https://api.wo-cloud.com/content/widget/?geoObjectKey=16437673&language=en&region=US&timeFormat=HH:mm&windUnit=mph&systemOfMeasurement=imperial&temperatureUnit=fahrenheit" class="weather"></iframe>
+            </div>
+        </div>
+        <div class="rest">
+            <div class="bottomHome">
+                <div class="bottomRest">
+                    <h4 class="homeSubheadColor">OPERATION INFORMATION</h4>
+                    <div class="restSub">
+                        <p class="restSubText">
+                            Open 365 Days a Year <br> No reservations <br> No Advance Tickets <br> Everyday From: 6:30 a.m. to 12:30 a.m.
+                        </p>
+                        <p class="restSubText" id="time">time</p>
+                    </div>
+                </div>
+                <div class="bottomRest">
+                    <h4 class="homeSubheadColor">CONTACT INFORMATION</h4>
+                    <div class="restSub">
+                        <p class="restSubText">
+                            1197 West Carson Street, Pittsburgh, PA 15219 <br> Phone Number: 412.381.1665
+                            <br> Fax: 412.381.1943 <br> <a href="mailto:duq.incline@duquesneincline.org" class="mailHome">Email</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="restHome">
+                <h4 class="homeSubheadColor">DIRECTIONS</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.6008022473166!2d-80.02012282388148!3d40.43983757143598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af24753323%3A0x391d7b79fc54985b!2sDuquesne%20Incline!5e0!3m2!1sen!2sus!4v1743229793804!5m2!1sen!2sus" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="restSubText">Click the button to get your coordinates.</p>
+                <button onclick="getLocation()" class="location" id="getLocation">Click Here</button>
+                <p id="demo"></p>
+            </div>
+        </div>
+        <div class="listButton" onClick="mailingList()">
+            <button id="listButton">JOIN OUR MAILING LIST</button>
+        </div>
+    </div>
+    <div class="toTop">
+        <a href="#" class="topButton">Go to Top</a>
+    </div>
+    <footer class="footer">
+        <p>Copyright &copy; 2025</p>
+        <p>1197 West Carson Street, Pittsburgh, PA 15219</p>
+        <p>Fax: 412.381.1943</p>
+        <p>Phone Number: 412.381.1665</p>
+        <a href="mailto:duq.incline@duquesneincline.org" class="mail">Email</a>
+    </footer>
+</body>
+</html>
